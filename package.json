@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindoB/WPR381-Advanced-Events-Pty-Ltd-Copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lindoB/WPR381-Advanced-Events-Pty-Ltd-Copy/issues"
+  },
+  "homepage": "https://github.com/lindoB/WPR381-Advanced-Events-Pty-Ltd-Copy#readme"
 }
