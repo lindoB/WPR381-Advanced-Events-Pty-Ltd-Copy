@@ -11,6 +11,38 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/login", (req, res) => {
+    res.render("login");
+});
+
+app.get("/register", (req, res) => {
+    res.render("register");
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
+app.get("/dashboard", (req, res) => {
+    res.render("dashboard");
+});
+
+app.get("/admin/events", (req, res) => {
+    res.render("admin-events");
+});
+
+app.get("/events/:id", (req, res) => {
+    res.render("event-details");
+});
+
+app.get("/admin/events/create", (req, res) => {
+    res.render("event-form");
+});
+
+app.use((req, res) => {
+    res.status(404).render("404");
+});
+
 const PORT = 3000;
 
 app.listen(PORT, () => {

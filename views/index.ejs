@@ -10,15 +10,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2>EventHub</h2>
-
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </nav>
+    <%- include('partials/navbar') %>
 
     <!-- HERO -->
     <section class="hero">
@@ -28,11 +20,35 @@
             Book conferences, festivals, workshops and more.
         </p>
 
+        <a href="#events">
         <button>Explore Events</button>
+        </a>
+
     </section>
 
+    <!-- SEARCH & FILTER -->
+<section class="search-section">
+    <form class="search-form">
+        <input
+            type="text"
+            placeholder="Search events..."
+        >
+
+        <select>
+            <option>All Categories</option>
+            <option>Conference</option>
+            <option>Festival</option>
+            <option>Workshop</option>
+        </select>
+
+        <input type="date">
+
+        <button type="submit">Search</button>
+    </form>
+</section>
+
     <!-- EVENTS -->
-    <section class="events">
+    <section id="events" class="events">
 
         <div class="event-card">
             <img src="https://picsum.photos/300/200?1">
@@ -41,7 +57,7 @@
 
             <p>Date: 12 June 2026</p>
 
-            <button>Book Now</button>
+            <a href="/events/1"><button>Book Now</button></a>
         </div>
 
         <div class="event-card">
@@ -51,7 +67,7 @@
 
             <p>Date: 20 July 2026</p>
 
-            <button>Book Now</button>
+            <a href="/events/2"><button>Book Now</button></a>
         </div>
 
         <div class="event-card">
@@ -61,15 +77,13 @@
 
             <p>Date: 5 August 2026</p>
 
-            <button>Book Now</button>
+            <a href="/events/3"><button>Book Now</button></a>
         </div>
 
     </section> 
     
     <!-- FOOTER -->
-    <footer>
-        <p>Smart Event Management Platform © 2026</p>
-    </footer>
+    <%- include('partials/footer') %>
 
 </body>
 </html>
